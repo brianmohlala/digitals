@@ -1,0 +1,264 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff ;
+  font-family: calibri, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Style a div that will contains page header/title */
+.pageHeader {
+  background-color: #042a56;
+  padding: 20px 10px 2px 10px;
+  width: 100%;
+}
+.pageHeader h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  font-family: calibri, sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+}
+
+/* Style a Nevigation bar after the main page title*/
+#navigation a{  
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1569C7;
+}
+
+/* Add some sticky css properties to the navigation container */
+#navbar {
+  position:-webkit-sticky;
+  display: block;
+  background-color: white;
+
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navigation a:hover { /* underline navigation content when hover is active */
+  text-decoration: underline 3px ;
+  text-underline-offset: 21px;
+}
+
+
+/* Parallax main container */ 
+.parallax {
+  /* The image used */
+  background-image: url("../images/clint-patterson-dYEuFB8KQJk-unsplash.jpg");
+  min-height: 500px; 
+  min-width: 100%;
+  width: 100%;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* H1 Tag ontop of the image used on the parallax */
+#parallaxH1Tag {
+  margin: 10% 10px 10px 10%;
+  position:absolute;
+  font-size: 32px;
+  font-family: monospace;
+}
+
+/* (P)Tag ontop of the image used on the parallax */
+#parallaxPTag {
+  margin: 15% 10px 10px 25px;
+  position:absolute;
+  width: 60ch;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Change color of the text ontop of the parallax image */
+.parallaxText {
+  color: #fff;
+}
+
+/* add some styles to the column div of the profiles */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  margin-top: 40px;
+  padding: 0 8px;
+}
+
+/* Change profiles width when using website on different devices */
+@media screen and (max-width: 31%) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  .pageHeader {
+    width: 100%;
+    display: block;
+  }
+
+  .categoriesDivs {
+    width: 50ch;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/* Contact buttons on the profiles */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* contact buttons onhover css styles */
+.button:hover {
+  background-color: #555;
+}
+
+
+
+/* Main page content below the profiles */
+main {  
+  margin-left: 15px;
+  line-height: 26px;
+}
+
+/* Subcategories (div)'s of the main page content */
+.categoriesDivs {
+  width: 100ch;
+  margin-left: 19%;
+  text-align:center;
+  display: block;
+}
+
+/* Change font size & color of the H4 tags inside the main page content*/
+main h4 { 
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  
+}
+
+/* Style all hyper link inside the main page content & subcategories */
+main p a  { 
+  text-decoration: none;
+  color: #000000;
+}
+
+/* onhover css styling on all hyper links inside the main page content & subcategories */
+main p a:hover {  
+  text-decoration: underline;
+  color: #1569C7;
+}
+
+
+
+/* Footer content styles*/
+/* Styles of the page footer below */
+footer {
+  float:none;
+  display: flex;
+  padding: 5px;
+  background-color: rgb(224, 224, 224);
+  color: #000000;
+  width: 100%;
+}
+.footerDivs {
+  float: left;
+  margin-left: 5%;
+}
+.paragraphs {
+  width: 50ch;
+}
+
+
+/* social link/icons */
+.fa-facebook-official {
+  color: rgb(255, 255, 255);
+  background-color: #c3c3c3;
+  padding: 5%;
+  margin-left: 10px;
+}
+
+/* Newslatter form  */
+input {
+  padding: 8px;
+  border: solid 1px rgb(173, 173, 173);
+}
+
+#NewslatterForm {
+  width: 70ch;
+}
+footer button{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 66, 198);
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+}
+
+/* mohlala digitals copyright */
+footer  a {
+  color: rgb(30, 102, 245);
+  text-decoration: none;
+}
+footer a:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+

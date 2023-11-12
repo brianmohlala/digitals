@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9eeace3bfe.js" crossorigin="anonymous"></script>
+  <!-- insert fivicon below -->
+  <link rel="icon" type="image/x-icon" href="fivicon & icons/mohlala white logo.ico">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/queries.css"> <!-- form styles -->
+  <title>Mohlala Digitals</title>
+</head>
+<body>
+
+
+  <header>
+    <!-- Website logo  -->
+      <div class="logoNav ">
+        <img src="fivicon & icons/mohlala black logo.ico" style="height: 200px; margin-left: 40px;">
+      </div>
+      
+      <!-- sidenav overlay -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="#">Clients</a>
+          <a href="contact.html">Contact</a>
+        </div>
+     
+    
+    <!-- Menu bars on the header to open the sidenav -->
+    <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+    
+    <!--Div for short paragraph inside the main page header-->
+    <div id="headerText"> 
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Delectus eum suscipit ut ipsa illum quas 
+        modi molestiae amet nesciunt quaerat odit obcaecati 
+        ipsum porro hic, iusto sunt voluptates repellat aperiam!
+      </p>
+    </div>
+
+    <!-- (Get one) btn in the home page header  -->
+    <button onclick="document.getElementById('id01').style.display='block'" >Get One</button>
+
+    <!-- end of the header!! -->
+  </header>
+
+  <!-- The code below creates a Hidden form in the home page. Form can be accesed by the click of the(Get one btn) -->
+  <div id="id01" class="modal">
+    
+    <!-- The  -->
+    <form class="modal-content animate" method="post">
+
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Name</b></label>
+        <input type="text" placeholder="Enter name" name="name" required>
+  
+        <label for="surname"><b>Surname</b></label>
+        <input type="text" placeholder="Enter Surname" name="snm" required>
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="text" placeholder="Enter Phone No" name="phone" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+          
+        &nbsp;
+
+        <p>
+          Please let us know the minimum pages of your website below. <br> 
+
+          NOTE: If you get lost about what this is for, visit <a href="index.html">home</a> page for more info.
+        </p>
+
+        <label for="pages"><b>Pages</b></label>
+        <input type="number" placeholder="0" name="pages" required id="pages"
+        style="margin-left: 8.1%; border: #b8baba 1px solid; padding: 10px; width: 40px;"> <br>
+
+        <!-- A user drop down select for choosing the type of website -->
+        <label>Choose a website: </label>
+
+        <select name="websites" id="websiteSelect">
+          <option value="personal-web-page">Personal web page</option>
+          <option value="business">Business</option>
+          <option value="e-commerce">E-commerce</option>
+          <option value="blog">Blog</option>
+          <option value="online-newspaper">Online newspaper</option>
+        </select>
+
+        <p>Please write discription about the type of website you're looking for to help us to create the best interactive website for you.</p> 
+      
+        <textarea name="discription" rows="4" placeholder="Write something..." required></textarea>
+
+        <button type="submit">Submit</button>
+        <label for="checkBox">
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- A welcome video after the header -->
+  <div class="row">
+    <div class="column">
+      <video autoplay muted loop>
+        <source src="videos/Green Orange Illustration Vlog  Channel Intro Outro Youtube Video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="column">
+      <p class="whoWeAre">Who we are?</p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quisquam enim eius unde itaque perspiciatis cumque odit voluptatem, natus odio, consequatur quia sit quos dignissimos laboriosam quidem corporis aspernatur. Labore.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quisquam enim eius unde itaque perspiciatis cumque odit voluptatem, natus odio, consequatur quia sit quos dignissimos laboriosam quidem corporis aspernatur. Labore.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quisquam enim eius unde itaque perspiciatis cumque odit voluptatem, natus odio, consequatur quia sit quos dignissimos laboriosam quidem corporis aspernatur. Labore.
+      </p>
+
+      <em>MohlalaDigitals.co.za</em>
+    </div>
+  </div>
+
+  <!-- website categories -->
+  <div class="row">
+    <div class="column">
+      <h4>Web Development</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugit ratione ipsam quasi eaque laboriosam adipisci doloremque quis recusandae, mollitia hic inventore dolor sint, nesciunt sapiente nulla harum obcaecati vero?
+      </p>
+      
+      <h5>Web Design</h5>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nemo molestiae architecto, exercitationem facilis corporis tempore dolor fuga cum id earum repudiandae officiis error nobis accusantium illum iure, quam esse?
+      </p>
+
+      <h5>Web Management</h5>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate dolore nemo velit illo veniam cumque dignissimos sint aspernatur consectetur atque sapiente eius totam at, vitae dicta fuga quas unde sed.
+      </p>
+    </div>
+
+    <div class="column">
+      <h4>Graphic Designs</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores eveniet quas ea ratione? Repellendus aut modi rem, suscipit voluptates eveniet, corporis enim inventore quam qui cum reiciendis perspiciatis quibusdam?
+      </p>
+
+      <h5>Cover Arts & Poster</h5>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores eveniet quas ea ratione? Repellendus aut modi rem, suscipit voluptates eveniet, corporis enim inventore quam qui cum reiciendis perspiciatis quibusdam?
+      </p>
+
+      <h5>Printing, CV Editting & Scanning </h5>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores eveniet quas ea ratione? Repellendus aut modi rem, suscipit voluptates eveniet, corporis enim inventore quam qui cum reiciendis perspiciatis quibusdam?
+      </p>
+    </div>
+
+    <div class="column">
+      <h4>Suppliers</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde earum sequi blanditiis maxime laborum amet facilis eum repellendus soluta, vero laudantium quaerat doloremque qui cum, est veritatis laboriosam sed.
+      </p>
+
+      <h5>Clothing Supply</h5>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores eveniet quas ea ratione? Repellendus aut modi rem, suscipit voluptates eveniet, corporis enim inventore quam qui cum reiciendis perspiciatis quibusdam?
+      </p>
+
+      <h5>Potrait Frames Supply</h5>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum asperiores eveniet quas ea ratione? Repellendus aut modi rem, suscipit voluptates eveniet, corporis enim inventore quam qui cum reiciendis perspiciatis quibusdam?
+      </p>
+    </div>
+  </div>
+
+  <div id="backToTop">
+    <a href="#">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- Adding footer to the Home page -->
+  <footer>
+    <div class="row">
+      <div class="column">
+        <h4 style="color: aquamarine;">OUR VISSIONS</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing 
+          elit. Distinctio officiis laborum saepe quisquam ipsa 
+          quasi soluta doloribus accusantium maiores eligendi, 
+          tempora laboriosam cum earum amet? Earum iste ipsum 
+          fugiat laudantium!
+        </p>
+    
+        <p style="color: #b8baba;">Follow us</p>
+        <a href="#">
+          <i class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    
+      <div class="column">
+        <h4 style="color: aquamarine;">CONTACT US</h4>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i> 
+          brianmohlala21@gmai.com
+        </p>
+        <p>+227 187 1241</p>
+      </div>
+
+      <div class="column">
+        <h4 style="color: aquamarine;">
+          SIGN IN TO OUR NEWSLATTER
+        </h4>
+
+        <!-- Newslatter form inside th home page footer -->
+        <form>
+          <div>
+            <input type="text" name="email" id="footerEmail" placeholder="Enter your email">
+            <button type="submit" id="submitBtn">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+<!-- div after the footer for copyright and signature -->
+<div class="afterFooter">
+  <span id="copyright">
+    <p style="color: grey;">
+      Copyright 2023.<a  href="#" style="color: grey;">Mohlaladigitals</a>.All Rights Reserved
+    </p>
+  </span>
+
+  <span id="signature">
+    <a href="#">
+      <p>Mohlaladigitals.co.za</p>
+    </a>
+  </span>
+</div>
+
+
+
+<!-- script -->
+<script>
+
+  /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff ;
+  font-family: calibri, sans-serif;
+}
+
+/* header styles */
+header {
+  background-image: url(../images/compare-fibre-9HGPvHThNME-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  box-shadow: #818181 0 4px 8px 0px;
+}
+
+
+h1 { /* main Tittle */
+  color: #fff;
+  margin-left: 10%;
+  font-family: calibri, sans-serif;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 42px;
+}
+
+header .fa-bars{ /* navigation bars */
+  color: #ffffff;
+  margin-bottom: 0px;
+  margin-left: 90%; 
+  font-size: 32px;
+  cursor: pointer;
+  float: left;
+}
+
+header .fa-bars:hover { /* navigation bars (hover styles) */
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+header #headerText {
+  width: 60ch;
+  color: #fff;
+  margin-left: 5%;
+  font-family: calibri, sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+}
+
+/* sidenav overlay */
+/* The side navigation menu */
+.sidenav {
+  height: 35%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #2f323a; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* button inside header need to be styled */
+header button { /* Get Queries button */
+  margin-left: 5%;
+  margin-top: 80px;
+  padding: 10px;
+  width: 19%;
+  border: none;
+  background-color: rgb(0, 66, 198);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+/* A welcome video after the header  */
+video {
+  width: 600px;
+  height: 338px;
+  margin: 30px 0 5px 20px;
+  border: 1px rgb(206, 205, 205) solid;
+  border-radius: 4px;
+}
+
+/* add some styles to the column div of the profiles */
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+.column .whoWeAre {
+  margin: 30px 0px 0px 0px;
+}
+
+.row {
+  display: flex;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.whoWeAre {
+  color: rgb(0, 200, 133);
+  font-family: calibri, sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+
+/* website categories */
+.column h4 {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.column h5 {
+  color: rgb(15, 37, 77);
+  
+}
+
+/* Back to the top button */
+#backToTop {
+  position:absolute;
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+  margin-left: 15px;
+  padding: 7px;
+}
+.fa-arrow-up {
+  color: cornflowerblue;
+  font-size: 40px;
+}
+
+
+/* Adding some styles to the home page footer */
+footer {
+  float:none;
+  display: flex;
+  padding: 5px;
+  background-color: #313636;
+  color: #fff;
+  width: 100%;
+}
+
+/* social link/icons */
+.fa-square-facebook {
+  color: #b8baba;
+  background-color: #313636;
+  font-size: 52px;
+  padding: 2%;
+}
+
+
+
+/* Newslatter form  */
+#footerEmail {
+  width: 400px;
+}
+
+
+footer button{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 66, 198);
+  border: none;
+  padding: 9px;
+  width: 400px;
+  cursor: pointer;
+}
+
+/* mohlala digitals copyright */
+.afterFooter {
+  background-color: #313636;
+}
+
+.afterFooter span {
+  float: left;
+  display: block;
+}
+
+.afterFooter a {
+  color: rgb(30, 102, 245);
+  text-decoration: none;
+}
+
+#signature {
+  margin-left: 50%;
+  font-weight: 600;
+}
+
+#copyright {
+  margin-left: 20px;
+}
+
+.afterFooter a:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}

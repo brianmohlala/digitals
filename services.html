@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9eeace3bfe.js" crossorigin="anonymous"></script>
+  <!-- insert fivicon below -->
+  <link rel="icon" type="image/x-icon" href="fivicon & icons/mohlala white logo.ico">
+  <link rel="stylesheet" href="CSS/services.css">
+  <title>Services</title>
+</head>
+<body>
+  <!-- creating page header -->
+  <header>
+    <img src="">
+    <!-- Main page title  -->
+    <h1>MOHLALA DIGITALS</h1>
+      
+  </header>
+
+  <!-- Navigation  -->
+  <div id="navbar">
+    <p id="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact us</a>
+    </p>
+  </div>
+
+ 
+
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div id="ourServices" class="mySlides">
+    <h4>Our Services</h4>
+    <p>
+      Our company offers a range of services in the field of web design. Our team of skilled professionals is dedicated to providing high-quality solutions to meet the unique needs of our clients. We specialize in creating visually appealing and user-friendly websites that are optimized for search engines. Our services include website design, development, maintenance, and optimization. We also offer e-commerce solutions, content management systems, and mobile app development. Our goal is to help our clients achieve their online objectives and enhance their digital presence. We pride ourselves on delivering exceptional customer service and ensuring client satisfaction.
+    </p>
+    <p class="author">- Mohlala Digitals</p>
+  </div>
+
+  <!-- about personal web page -->
+  <div id="personalWeb" class="mySlides"> 
+    <h4>Personal web page</h4>
+
+    <p>
+      A personal blog page is a platform where individuals can share their thoughts, opinions, and experiences with a wider audience. It is a space where writers can express themselves freely and creatively, and engage with readers who share similar interests. Personal blog websites can cover a wide range of topics, from lifestyle and travel to politics and social issues. They can also serve as a means of building a personal brand or establishing oneself as an expert in a particular field. Overall, personal blog websites offer a unique opportunity for individuals to connect with others and share their perspectives with the world.
+    </p>
+    <p class="author">- Mohlala Digitals</p>
+  </div>
+
+  <div id="entertaimentWeb" class="mySlides">
+    <h4>Entertainment Website</h4>
+    <p>
+      An entertainment website serves as a comprehensive digital platform that offers a diverse range of content pertaining to the entertainment industry. This content may encompass news, reviews, interviews, and features on movies, TV shows, music, and other forms of entertainment. The primary objective of an entertainment website is to captivate and enlighten its audience, while simultaneously promoting the latest releases and events in the entertainment world. To sustain their operations, such websites frequently depend on advertising revenue and partnerships with studios, record labels, and other industry players.
+    </p>
+    <p>
+      The purpose of an entertainment website is to engage and inform its audience, while also promoting the latest releases and events in the entertainment world. Such websites often rely on advertising revenue and partnerships with studios, record labels, and other industry players to sustain their operations.
+    </p>
+    <p class="author">- Mohlala Digitals</p>
+  </div>
+
+  <div id="businessWeb" class="mySlides">
+    <h4>Business website</h4>
+    <p>
+      A business website is an essential tool for any company looking to establish a strong online presence. It serves as a virtual storefront, providing potential customers with information about the company's products and services, as well as its history and mission. A well-designed website can also help to build credibility and trust with customers, as it demonstrates that the company is professional and committed to providing high-quality products and services. Additionally, a business website can be used to generate leads and sales, as well as to communicate with customers and provide them with support and assistance. Overall, a business website is a critical component of any successful marketing strategy, and should be given careful consideration and attention to ensure that it effectively represents the company and its brand.
+    </p>
+    <p class="author">- Mohlala Digitals</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footerDivs">
+      <h4>OUR VISSIONS</h4>
+      <p class="paragraphs">
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Distinctio officiis laborum saepe quisquam ipsa 
+        quasi soluta doloribus accusantium maiores eligendi, 
+        tempora laboriosam cum earum amet? Earum iste ipsum 
+        fugiat laudantium!
+      </p>
+  
+      <!-- social link/icons -->
+      <h4>FOLLOW US</h4>
+      <a href="#">
+        <i class="fa-brands fa-square-facebook"></i>
+      </a>
+    </div>
+  
+    <!-- Contact us -->
+    <div class="footerDivs">
+      <h4>CONTACT US</h4>
+      <p class="paragraphs">
+        <i class="fa-solid fa-envelope"></i> 
+        brianmohlala21@gmai.com
+      </p>
+  
+      <p>+227 187 1241</p>
+    </div>
+  
+    <!-- Newslatter form -->
+    <div id="NewslatterForm">
+      <h4>SIGN IN TO OUR NEWSLATTER</h4>
+      <form>
+        <p>
+          <input type="text" name="email" id="email" placeholder="Enter your email">
+          <button type="submit" id="submitBtn">Sign in</button>
+        </p>
+  
+        <a id="mohlalaDigitals" href="#">
+          <p>Mohlaladigitals.co.za</p>
+        </a>
+  
+        <p>Copyright 2023. <a id="copyright" href="#">Mohlaladigitals.</a> 
+          All Rights Reserved
+        </p>
+      </form>
+    </div>
+  
+  </footer>
+    
+
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+      
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+      
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+      
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+
+  // main content 
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+</body>
+</html>

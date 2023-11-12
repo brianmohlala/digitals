@@ -1,0 +1,114 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-size: cover;
+  font-family: calibri, sans-serif;
+}
+
+body::before {
+  content: "";
+  background-image: url(../images/compare-fibre-9HGPvHThNME-unsplash.jpg);
+  background-size: cover ;
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
+}
+
+/* header styles */
+header {
+  /* background-color: #1569C7; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  position:-webkit-sticky;
+}
+
+h1 { /* main Tittle */
+  color: #fff;
+  margin-left: 7%;
+  margin-top: 0;
+  font-family: calibri, sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+}
+
+/* Navigation */
+#navigation a{  
+  margin-left: 15%;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#navigation a:hover {
+  text-decoration: underline 3px rgb(1, 1, 255) ;
+  text-underline-offset: 21px;
+  transition: 0.3s;
+  opacity: 0.8;
+
+}
+
+/* sticky navigation */
+#navbar {
+  position:-webkit-sticky;
+  display: block;
+  padding: 40px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+/* main content */
+
+main h2 {
+  margin-left: 5.9%;
+  margin-top: 30px;
+  padding: 20px;
+  color: white;
+}
+main .fa-phone {
+  color: #0278ff;
+}
+
+main p {
+  margin-left: 5.9%;
+  margin-top: 30px;
+  padding: 20px;
+  color: white;
+  width: 13cm;
+}
+
+main .mainContainers {  /*second div in main element*/
+  float: left;
+}
+
+#secondMainDiv pre {
+  margin-left: 23em;
+  margin-top: 30px;
+  width: 40ch;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29px;
+  font-family: calibri, arial;
+}
+

@@ -1,0 +1,236 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #042a56;
+  font-family: calibri, sans-serif;
+}
+
+/* header styles */
+header {
+  background-color: #042a56;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  position:-webkit-sticky;
+}
+
+/* Navigation */
+#navigation a{  
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1569C7;
+}
+
+/* sticky navigation */
+#navbar {
+  padding: 5px;
+  position:-webkit-sticky;
+  display: block;
+  background-color: #ddd;
+
+}
+
+#navigation a:hover {
+  text-decoration: underline 3px ;
+  text-underline-offset: 23px;
+}
+
+h1 { /* main Tittle */
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  font-family: calibri, sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+
+/* Main content */
+
+/* slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #000000f1;
+  
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 10%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 19px;
+}
+
+#ourServices {
+  background-image: url(../images/sufyan-6Kgk6xFdvPU-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#personalWeb {
+  background-image: url(../images/milad-fakurian-VbC-EiOTDqA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#entertaimentWeb {
+  background-image: url(../images/milad-fakurian-RVM5HYqg2jA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#businessWeb {
+  background-image: url(../images/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right*/
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+.slideshow-container h4 {
+  font-size: 19px;
+} 
+
+/* footer */
+footer {
+  float:none;
+  display: flex;
+  padding: 5px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 8px 4px 8px 8px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  width: 100%;
+  
+}
+.footerDivs {
+  float: left;
+  margin-left: 5%;
+}
+.paragraphs {
+  width: 50ch;
+}
+
+
+/* social link/icons */
+.fa-square-facebook {
+  color: #a8aaaa;
+  background-color: rgb(244, 244, 244);
+  font-size: 2.5em;
+  padding: 2%;
+}
+
+.fa-square-facebook:hover {
+  color: #1569C7;
+  transition: 0.7s;
+}
+
+
+/* Newslatter form  */
+input {
+  padding: 8px;
+  border: 1px grey solid;
+  border-radius: 2.5px;
+}
+
+#NewslatterForm {
+  width: 70ch;
+}
+footer button{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 66, 198);
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+}
+
+/* mohlala digitals copyright */
+footer  a {
+  color: rgb(30, 102, 245);
+  text-decoration: none;
+}
+footer a:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+footer h4 {
+  color: rgb(0, 0, 0);
+}
