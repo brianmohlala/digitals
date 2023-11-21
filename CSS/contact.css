@@ -97,11 +97,11 @@ main p {
 }
 
 main .mainContainers {  /*second div in main element*/
-/*   float: left; */
+/*   float: left;  */
 }
 
 #secondMainDiv pre {
-  margin-left: 23em;
+/*   margin-left: 23em; */
   margin-top: 30px;
   width: 40ch;
   padding: 20px;
