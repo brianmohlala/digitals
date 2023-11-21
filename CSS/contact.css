@@ -97,7 +97,7 @@ main p {
 }
 
 main .mainContainers {  /*second div in main element*/
-  float: left;
+/*   float: left; */
 }
 
 #secondMainDiv pre {
