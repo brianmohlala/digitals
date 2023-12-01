@@ -23,6 +23,11 @@
       <a href="services.html">Services</a>
       <a href="contact.html">Contact us</a>
     </p>
+
+    <!-- A div that is only visible on the navbar when onscroll is active(displaying the webpage title)  -->
+    <div>
+      <h1>MOHLALA DIGITALS</h1>
+    </div>
   </div>
 
   <!-- Creating a Parallax for the main content -->
@@ -205,25 +210,8 @@
   </footer>
       
 
-  <script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
-      
-    // Get the navbar
-    var navbar = document.getElementById("navbar");
-      
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-      
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
+  <script src="JS/index.js"></script>
+    
 </body>
 </html>
 </body>
